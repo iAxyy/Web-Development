@@ -1,0 +1,50 @@
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  
+    TO BE CONTINUED... 
+    (NOT DONE YET)
+
+<?xml version="1.0" encoding="utf-8"?>
+<addon addon_id="XenCarta" title="(XenCarta) XenCarta" version_string="1.0.0" version_id="35" url="http://hardcorepvp.org/" install_callback_class="Addon-XenCarta_Install" install_callback_method="installCode" uninstall_callback_class="addon-XenCarta_Install" uninstall_callback_method="uninstallCode">
+  <admin_navigation/>
+  <admin_permissions/>
+  <admin_style_properties/>
+  <admin_templates/>
+  <code_events/>
+  <code_event_listeners>
+    <listener event_id="init_dependencies" execute_order="10" callback_class="XenCarta_Listener_Init" callback_method="listen" active="1" description="Denormalization"/>
+    <listener event_id="load_class_bb_code" execute_order="10" callback_class="XenCarta_Listener_BbCode" callback_method="formatter" active="1" description="BBCode"/>
+    <listener event_id="load_class_model" execute_order="10" callback_class="XenCarta_Listener_Model" callback_method="post" active="1" description="Post Model"/>
+    <listener event_id="navigation_tabs" execute_order="99" callback_class="XenCarta_Listener_NavTabs" callback_method="listen" active="1" description="Navigation Tabs"/>
+    <listener event_id="template_hook" execute_order="10" callback_class="XenCarta_Listener_Template" callback_method="template_hook" active="1" description="Template Hooks"/>
+  </code_event_listeners>
+  <cron/>
+  <email_templates/>
+  <optiongroups>
+    <group group_id="XenCarta" display_order="10000" debug_only="0"/>
+    <option option_id="XenCarta_autolink" edit_format="spinbox" data_type="integer" can_backup="1">
+      <default_value>-1</default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="XenCarta" display_order="11"/>
+    </option>
+    <option option_id="XenCarta_cache" edit_format="textbox" data_type="string" can_backup="1">
+      <default_value>+7 days</default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="XenCarta" display_order="111"/>
+    </option>
+    <option option_id="XenCarta_tocnumber" edit_format="onoff" data_type="boolean" can_backup="1">
+      <default_value>0</default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="XenCarta" display_order="2"/>
+    </option>
+    <option option_id="XenCarta_tocreq" edit_format="spinbox" data_type="unsigned_integer" can_backup="1">
+      <default_value>1</default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="XenCarta" display_order="1"/>
+    </option>
+    
+    TO BE CONTINUED... 
+    (NOT DONE YET)
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
